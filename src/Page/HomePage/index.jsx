@@ -46,6 +46,7 @@ const HomePage = () => {
     if (addUser.email && addUser.first_name && addUser.avatar) {
       dispatch(addUserData(addUser));
       setModal(false);
+      setAddUser(' ');
     } else {
       alert('please fill all data');
     }
