@@ -19,14 +19,14 @@
 }
 .left-col{
     flex:3;
+    margin-left: 40px;
 }
 .left-col h1{
-    margin-left: 5%;
+    /* margin-left: 5%; */
     margin-top: 12px;
 }
 .add-button{
-    margin-left: 5%;
-    margin-top: 12px;
+    margin: 12px 0px 10px 0px;
     background-color: #1F745D;
     color: white;
     border-radius: 10px;
@@ -36,7 +36,8 @@
 }
 .banner{
     display: flex;
-    margin:12px 0 0 50px;
+    margin-top: auto;
+    /* margin:12px 0 0 30px; */
     justify-content: center;
     background-color: #C5E3D5;
     padding: 10px;
@@ -46,4 +47,52 @@
 .banner h4{
     margin-right: 15px;
     padding-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        width: 100%;
+        padding: 0px;
+        display: block;
+    }
+    .right-col h2{
+        color: white;
+        text-align: center;
+    }
+    .left-col{
+        margin-left: 0px;
+    }
+    .left-col h1,
+    .add-button {
+        margin-left: 3%;
+    }
+
+    .banner {
+        margin: 12px 0 0 3%;
+    }
+          .banner h4 {
+            margin-right: 0px;
+            font-size: 14px;
+             padding-right: 0px;
+          }
+                  .add-button{
+                    padding: 5px 10px;
+                  }
+}
+
+/* Media queries for mobile */
+@media screen and (max-width: 480px) {
+    .right-col h2 {
+        padding: 15% 25%;
+        /* Adjust padding for smaller screens */
+    }
+
+    .left-col h1,
+    .add-button {
+        margin-left: 2%;
+    }
+
+    .banner {
+        margin: 12px 0 0 2%;
+    }
 }
